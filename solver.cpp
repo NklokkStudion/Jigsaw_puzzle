@@ -15,7 +15,6 @@ Solver::Solver(QImage image) : image(image)
         PICTURE[i][j].rgb[1][x][y] = color.green();
         PICTURE[i][j].rgb[2][x][y] = color.blue();
     }
-    vector<int> help = {};
     for (int k1 = 0; k1 < CNTSQ * CNTSQ; ++k1) {
         for (int k2 = 0; k2 < CNTSQ * CNTSQ; ++k2) {
             if (k1 == k2) continue;
